@@ -1,46 +1,38 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
-import Link from '@material-ui/core/Link';
-import ProTip from './dudo';
-import Button from '@material-ui/core/Button';
-import './ass.css';
+import ReactDOM from 'react-dom';
+import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { NavigationBar } from './components/NavigationBar';
+import { Home } from './components/Home';
+import { About } from './components/About';
+import { NoMatch } from './components/NoMatch';
+import { Project } from './components/Projects';
+import {Contact} from './components/Contact';
+//import Sidebar from './components/Sidebar';
 
-function Apps() {
-  return (
-    <Button variant="contained" color="blue" >
-      Hello World
-    </Button>
-  );
-}
 
-function Copyright() {
-  return (
+class Myne extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+  <Router>
+  <NavigationBar />
+  <Switch>
+  <Route exact path="/Home" component={Home} />
+  <Route exact path="/About" component={About} />
+  <Route exact path="/Projects" component={Project} />
+  <Route exact path="/Contact" component={Contact} />
+  <Route component={NoMatch} />
+  </Switch>
     
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
     
-  );
+  </Router>
+</React.Fragment>
+    );
+  }
 }
-
-export default function App() {
-  return (
-    <Container maxWidth="sm">
-      <Box my={4}>
-        <Typography variant="h4" component="h1" gutterBottom>
-          Create React App v4-beta example
-        </Typography>
-        <ProTip />
-        <Copyright />
-        <Apps />
-      </Box>
-    </Container>
-  );
-}
+ReactDOM.render(<Myne />, document.getElementById('root'));
+  
+//ReactDOM.render(<Car />, document.querySelector('#app'));
+export default Myne;

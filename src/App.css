@@ -2,17 +2,24 @@
   text-align: center;
   color: #61dafb;
   font-size: 50px;
-  text-shadow:black;
-  transition: ease-in-out;
-
+}
+.h1{
+  color: #61dafb;
+}
+.cd{
+  color: blue;
+  font-size: 20px;
+  border-color: brown;
+  font-style: italic;
+  padding: right;
+  background-position: 10px;
+  text-align: right ;
+  
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-.Button{
-  color:black;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -30,7 +37,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  
 }
 
 .App-link {

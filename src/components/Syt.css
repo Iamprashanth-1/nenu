@@ -1,0 +1,79 @@
+.cds{
+    text-align: center;
+    font-style: italic;
+    color: aqua;
+}
+.gh{
+    text-align: center;
+    colorb: black;
+    font-style: italic;
+    font-size: 30px;
+    padding: 40px;
+    background-position: 40px;
+}
+.hg{
+    text-align: center;
+    padding: 40px;
+
+}
+.jk{
+    position: center;
+    padding-left: 30%;
+    color:black;
+    font-style: italic;
+}
+body, html {
+    height: 100%;
+    }
+    .bg {
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    
+    body, html {
+        
+        }
+        .bga {
+        background-image: url("https://images-na.ssl-images-amazon.com/images/I/51slqM2g3jL._SX329_BO1,204,203,200_.jpg");
+        height: 1500px;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+.hu{
+    color:white;
+}
+.huu{
+    color: white;
+    border-color: black ;
+    
+
+}
+.km{
+    
+
+    font-size: 25px;
+}
+body, html {
+    height: 100%;
+    }
+    .bgs {
+    background-image: url("https://image.freepik.com/free-photo/image-human-brain_99433-298.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.kjh {
+        background-image: url("https://images.prismic.io/meltwater/5456e736-ea88-4f21-82bf-5132326cbd99_eng-0303-BONUS+Data+Visualization+Designed+for+PR+and+Comms+Professionals.png?auto=compress,format&rect=0,20,596,397&w=1920&h=1280");
+        background-position: 900px;
+        height: 900px;
+        
+      
+        
+       
+        }
